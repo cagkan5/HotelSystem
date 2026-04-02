@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Login</title>
+</head>
+<body>
+
+<h1>LOGIN TEST</h1>
+
+<input type="email" id="email" placeholder="Email"><br><br>
+<input type="password" id="password" placeholder="Password"><br><br>
+
+<button onclick="login()">Login</button>
+
+<p id="message"></p>
+
+<script>
+function login() {
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  if (email === "admin@hotel.com" && password === "1234") {
+    document.getElementById("message").innerText = "Login success!";
+  } else {
+    document.getElementById("message").innerText = "Wrong login";
+  }
+}
+</script>
+
+</body>
+</html>
